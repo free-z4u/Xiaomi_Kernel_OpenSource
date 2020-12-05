@@ -1279,4 +1279,6 @@ DEFINE_EVENT(hfi_msg_template, kgsl_hfi_receive,
 #endif /* _KGSL_TRACE_H */
 
 /* This part must be outside protection */
+#undef TRACE_INCLUDE_PATH
+#define TRACE_INCLUDE_PATH ../../drivers/gpu/msm
 #include <trace/define_trace.h>
